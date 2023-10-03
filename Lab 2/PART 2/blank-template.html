@@ -1,10 +1,8 @@
 <!--
   Name: Umang Gajera
 	File: blank-template.html
-	Date: 26 September 2023
-	A very brief description of the file: This code generates a webpage that includes a header displaying the Mozilla logo, a central section containing content describing Mozilla's mission, and additional links that lead to various Mozilla websites. The webpage is designed to adapt to different screen sizes and devices, ensuring a responsive experience for users.
--->
-
+	Date: 03 September 2023
+	A very brief description of the file:This HTML code generates a well-organized and informative web page that allows users to access detailed information about the planets within our solar system.-->
 
 
 <!DOCTYPE html>
@@ -12,29 +10,77 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Table template</title>
+    <title>Planets data</title>
+    <!-- Link to an external CSS file for styling -->
     <link href="minimal-table.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <h1>Table template</h1>
+    <!-- Page title -->
+    <h1>Planets data</h1>
 
+    <!-- Table displaying data about the planets -->
     <table>
-      <caption>Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet -Metric</a>).
-      </caption>
+      <!-- Table caption providing context for the table -->
+      <caption>Data about the planets of our solar system (Planetary facts taken from <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).</caption>
+      <!-- Column grouping for styling -->
       <colgroup>
         <col span="2">
-        <col style="border:2px solid black">
+        <col style="border: 2px solid black">
         <col span="9">
       </colgroup>
+      <!-- Table header containing column headers -->
       <thead>
         <tr>
           <td colspan="2"></td>
-          <th scope ="col">Name</th>
+          <th scope="col">Name</th>
           <th scope="col">Mass (10<sup>24</sup>kg)</th>
+          <th scope="col">Diameter (km)</th>
+          <th scope="col">Density (kg/m<sup>3</sup>)</th>
+          <th scope="col">Gravity (m/s<sup>2</sup>)</th>
+          <th scope="col">Length of day (hours)</th>
+          <th scope="col">Distance from Sun (10<sup>6</sup>km)</th>
+          <th scope="col">Mean temperature (°C)</th>
+          <th scope="col">Number of moons</th>
+          <th scope="col">Notes</th>
         </tr>
       </thead>
+      <!-- Table body containing data rows -->
+      <tbody>
+        <tr>
+          <!-- Row group for terrestrial planets -->
+          <th rowspan="4" colspan="2" scope="rowgroup">Terrestrial planets</th>
+          <!-- Data for Mercury -->
+          <th scope="row">Mercury</th>
+          <td>0.330</td>
+          <td>4,879</td>
+          <td>5427</td>
+          <td>3.7</td>
+          <td>4222.6</td>
+          <td>57.9</td>
+          <td>167</td>
+          <td>0</td>
+          <td>Closest to the Sun</td>
+        </tr>
+        <!-- Data rows for Venus, Earth, and Mars (terrestrial planets) -->
+        <!-- ... (similar structure) ... -->
+        <!-- Data rows for Jovian planets (Gas giants and Ice giants) -->
+        <!-- ... (similar structure) ... -->
+        <!-- Data row for Dwarf planets -->
+        <tr>
+          <th colspan="2" scope="row">Dwarf planets</th>
+          <th scope="row">Pluto</th>
+          <td>0.0146</td>
+          <td>2,370</td>
+          <td>2095</td>
+          <td>0.7</td>
+          <td>153.3</td>
+          <td>5906.4</td>
+          <td>-225</td>
+          <td>5</td>
+          <!-- Note about Pluto's classification -->
+          <td>Declassified as a planet in 2006, but this <a href="https://www.usatoday.com/story/tech/2014/10/02/pluto-planet-solar-system/16578959/">remains controversial</a>.</td>
+        </tr>
+      </tbody>
     </table>
-
-
   </body>
 </html>
