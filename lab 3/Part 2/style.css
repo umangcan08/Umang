@@ -3,3 +3,22 @@ html {
 }
 
 /* Your CSS below here */
+
+div {
+  height: 100px;   
+  width: 200px;
+  margin: center;
+  justify-self: center;
+  font-size: 1,0625rem;
+  color: white;
+  line-height: 65px;
+  background-color: red;
+  text-shadow: 1px 1px 2px black;
+  border-radius: 10px;
+  border: 1px solid #a30000;
+  box-shadow: 2px 2px 10px black, inset 0.3px 0.3px 1.5px white;
+  background: linear-gradient(135deg, rgba (255, 0, 0 ,1) 30%, rgba(180, 0,0,1)100%);
+  text-shadow: black;
+
+}
+
