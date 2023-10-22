@@ -43,3 +43,55 @@ header, footer {
 }
 
 /* WRITE YOUR CODE BELOW HERE */
+
+@font-face {
+  font-family: 'PlayfairDisplay1';
+  src: url(font/PlayfairDisplay1.ttf)format(TrueType);
+}
+
+@font-face {
+  font-family: 'Lobster2';
+  src: url(font/Lobster2.ttf)format(TrueType);
+}
+
+html
+{
+  font-family: 'PlayfairDisplay1';
+}
+
+h1, h2
+{
+  font-family: 'Lobster2';
+} 
+
+p, li
+{
+  line-height: 1.5;
+}
+
+html
+
+{
+font-size: 16px;
+}
+
+h1{
+  text-align: center;
+}
+
+h1, h2, p, li
+
+{
+letter-spacing: 1px;
+}
+
+a:hover, a:focus
+
+{
+  text-decoration: underline;
+}
+
+h1 + p, h2 + p
+{
+  text-indent: 20px;
+}
