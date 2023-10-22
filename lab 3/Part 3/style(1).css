@@ -46,7 +46,7 @@ header, footer {
 
 @font-face {
   font-family: 'PlayfairDisplay1';
-  src: url(font/PlayfairDisplay1.ttf)format(TrueType);
+  src: url(font/PlayfairDisplay\ 1.ttf)format(TrueType);
 }
 
 @font-face {
@@ -64,15 +64,15 @@ h1, h2
   font-family: 'Lobster2';
 } 
 
-p, li
-{
-  line-height: 1.5;
-}
-
 html
 
 {
 font-size: 16px;
+}
+
+p, li
+{
+  line-height: 1.5;
 }
 
 h1{
@@ -94,4 +94,43 @@ a:hover, a:focus
 h1 + p, h2 + p
 {
   text-indent: 20px;
+}
+
+a, a:visited, a:focus, a:hover
+
+{
+  color: #a66;
+  text-decoration: none;
+}
+
+a{
+  outline: none;
+}
+
+ol{
+  list-style-type: lower-alpha;
+}
+
+ul{
+  list-style-type: square;
+}
+
+nav a, nav a:visited{
+  color: #a66;
+  color: #f00;
+  text-decoration: underline;
+}
+
+nav ul li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  border:#a66 2px solid;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+section p a::after{
+  content: url(external-link-52.png);
 }
