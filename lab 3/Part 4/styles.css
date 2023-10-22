@@ -1,91 +1,102 @@
+/* Set the background color, text color, and font for the body */
 body {
-    background-color: #fff;
-    color: #333;
-    margin: 0;
-    font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
-  }
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
+}
 
-  img {
-      max-width: 100%;
-      display: block;
-  }
-  
-  .logo {
-    font-size: 200%;
-    padding: 50px 20px;
-    margin: 0 auto;
-    max-width: 980px;
-  }
-  
-  .grid {
-    margin: 0 auto;
-    grid-template-columns: 3fr 1fr;
-    padding: 0 20px;
-    max-width: 980px;
-    display: grid;
-    gap: 20px;
-  }
-  
-  nav {
-    background-color: #000;
-    position: sticky;
-    padding: .5em;
-    top: 0;
-  }
-  
-  nav ul {
-   margin: o;
-   padding: 0;
-   list-style: none;
-   display: flex;
-   justify-content: space-between;
-  }
+/* Style images within the page */
+img {
+  max-width: 100%;
+  display: block;
+}
 
+/* Style the logo section */
+.logo {
+  font-size: 200%;
+  padding: 50px 20px;
+  margin: 0 auto;
+  max-width: 980px;
+}
 
-  nav a {
-    text-decoration: none;
-    color:#fff;
-    padding: 0.5em 1em;
-  }
+/* Create a two-column grid layout for the main content */
+.grid {
+  margin: 0 auto;
+  grid-template-columns: 3fr 1fr;
+  padding: 0 20px;
+  max-width: 980px;
+  display: grid;
+  gap: 20px;
+}
 
-  main {
-    display:grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 20px;
-  }
+/* Style the navigation bar */
+nav {
+  background-color: #000;
+  position: sticky;
+  padding: .5em;
+  top: 0;
+}
 
-  .article {
-    border: 1px solid #ddd;
-  }
+/* Style the navigation links within an unordered list */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
 
-  .article img {
-    float: left;
-    margin-right: 20px;
-  }
-  
-  .aside {
-    border: 1px solid #ddd;
-  }
+/* Style the navigation links (anchors) */
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5em 1em;
+}
 
-  .photographs {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1px;
-  }
+/* Create a two-column grid layout for the main content */
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 20px;
+}
 
-  .photos {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1px;
-  
-  }
+/* Style the article section, which includes blog content */
+.article {
+  border: 1px solid #ddd;
+}
 
-  .feature {
-      width: 200px;
-      float: left;
-      margin-right: 20px 20px ;
-      
-  }
+/* Style images within the article section */
+.article img {
+  float: left;
+  margin-right: 20px;
+}
+
+/* Style the aside section, typically used for supplementary information */
+.aside {
+  border: 1px solid #ddd;
+}
+
+/* Create a grid layout for photographs within the aside section */
+.photographs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1px;
+}
+
+/* Style the list of photos within the aside section */
+.photos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+}
+
+/* Style images with the "feature" class */
+.feature {
+  width: 200px;
+  float: left;
+  margin-right: 20px;
+}
