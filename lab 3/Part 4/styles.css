@@ -19,33 +19,73 @@ body {
   
   .grid {
     margin: 0 auto;
+    grid-template-columns: 3fr 1fr;
     padding: 0 20px;
     max-width: 980px;
+    display: grid;
+    gap: 20px;
   }
   
   nav {
     background-color: #000;
+    position: sticky;
     padding: .5em;
+    top: 0;
   }
   
   nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+   margin: o;
+   padding: 0;
+   list-style: none;
+   display: flex;
+   justify-content: space-between;
   }
-  
+
+
   nav a {
-    color: #fff;
     text-decoration: none;
-    padding: .5em 1em;
+    color:#fff;
+    padding: 0.5em 1em;
+  }
+
+  main {
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .article {
+    border: 1px solid #ddd;
+  }
+
+  .article img {
+    float: left;
+    margin-right: 20px;
   }
   
+  .aside {
+    border: 1px solid #ddd;
+  }
+
+  .photographs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1px;
+  }
+
   .photos {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+  
   }
 
   .feature {
       width: 200px;
+      float: left;
+      margin-right: 20px 20px ;
+      
   }
