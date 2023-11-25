@@ -20,7 +20,7 @@ var insertZ = ["spontaneously combusted","melted into a puddle on the sidewalk",
 randomize.addEventListener('click', result);
 
 // Function to generate a new story
-function result() {
+function result() {     
    // Copy the original story template
    var newStory = storyText;
 
