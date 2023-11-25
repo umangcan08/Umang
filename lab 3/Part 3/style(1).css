@@ -1,136 +1,137 @@
 /* General setup */
-
 * {
   box-sizing: border-box;
 }
 
+/* Center the content and define min and max width */
 body {
   margin: 0 auto;
   min-width: 1000px;
   max-width: 1400px;
 }
 
-/* Layout */
-
+/* Layout for sections */
 section {
   float: left;
   width: 50%;
 }
 
+/* Layout for aside */
 aside {
   float: left;
   width: 30%;
 }
 
+/* Layout for nav */
 nav {
   float: left;
   width: 20%;
 }
 
+/* Clear the footer to prevent overlap */
 footer {
   clear: both;
 }
 
+/* Apply padding to header, section, aside, nav, and footer elements */
 header, section, aside, nav, footer {
   padding: 20px;
 }
 
-/* header and footer */
-
+/* Header and footer styling */
 header, footer {
   border-top: 5px solid #a66;
   border-bottom: 5px solid #a66;
 }
 
-/* WRITE YOUR CODE BELOW HERE */
-
+/* Define custom fonts using @font-face */
 @font-face {
   font-family: 'PlayfairDisplay1';
-  src: url(font/PlayfairDisplay\ 1.ttf)format(TrueType);
+  src: url(font/PlayfairDisplay1.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'Lobster2';
-  src: url(font/Lobster2.ttf)format(TrueType);
+  src: url(font/Lobster2.ttf) format('truetype');
 }
 
-html
-{
+/* Apply custom fonts to HTML and headings */
+html {
   font-family: 'PlayfairDisplay1';
 }
 
-h1, h2
-{
+h1, h2 {
   font-family: 'Lobster2';
-} 
-
-html
-
-{
-font-size: 16px;
 }
 
-p, li
-{
+/* Set the base font size for the entire page */
+html {
+  font-size: 16px;
+}
+
+/* Line-height for paragraphs and list items */
+p, li {
   line-height: 1.5;
 }
 
-h1{
+/* Center text in h1 elements */
+h1 {
   text-align: center;
 }
 
-h1, h2, p, li
-
-{
-letter-spacing: 1px;
+/* Add letter-spacing to headings, paragraphs, and list items */
+h1, h2, p, li {
+  letter-spacing: 1px;
 }
 
-a:hover, a:focus
-
-{
+/* Underline links on hover and focus */
+a:hover, a:focus {
   text-decoration: underline;
 }
 
-h1 + p, h2 + p
-{
+/* Apply text indentation to paragraphs following headings */
+h1 + p, h2 + p {
   text-indent: 20px;
 }
 
-a, a:visited, a:focus, a:hover
-
-{
+/* Style link colors and remove default outlines */
+a, a:visited, a:focus, a:hover {
   color: #a66;
   text-decoration: none;
 }
 
-a{
+a {
   outline: none;
 }
 
-ol{
+/* Customize list style types for ordered and unordered lists */
+ol {
   list-style-type: lower-alpha;
 }
 
-ul{
+ul {
   list-style-type: square;
 }
 
-nav a, nav a:visited{
-  color: #a66;
-  color: #f00;
+/* Style navigation links in the sidebar */
+nav a, nav a:visited {
+  color: #a66; /* Default link color */
+  color: #f00; /* Override link color on focus */
   text-decoration: underline;
 }
 
+/* Style navigation list items */
 nav ul li {
   padding: 0;
   margin: 0;
   list-style-type: none;
-  border:#a66 2px solid;
+  border: #a66 2px solid;
   margin: 10px;
   padding: 10px;
   text-align: center;
 }
 
-section p a::after{
+/* Add external link icon after links in sections */
+section p a::after {
   content: url(external-link-52.png);
 }
